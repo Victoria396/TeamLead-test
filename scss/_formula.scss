@@ -1,0 +1,77 @@
+.formula {
+    background-color: #fff6da;
+    background-image: linear-gradient(62deg, #fff6da 26%, #ffd87e 100%);
+    padding-top: 660px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    &__center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    div {
+        ul {
+            li {
+                margin: -32px 196px 61px 196px;
+                p {
+                    margin-left: 20px;
+                    margin-top: 8px;
+                    text-transform: uppercase;
+                }
+            }
+            div {
+            img {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                object-fit: cover;
+                border: 3px solid #e3ab00;
+            }
+            }
+        }
+    }
+}
+
+.formula__btn {
+    margin-bottom: 55px;
+    margin-top: 150px;
+}
+
+.line-1 {
+    width: 125px;
+    height: 2px;
+    margin-top: -45px;
+    border-top: 2px solid #e3ab00;
+    transform: rotate(20deg);
+    position: absolute;
+    left: 270px;
+}
+
+.line-2 {
+    transform: rotate(7deg);
+    width: 100px;
+    margin-top: -70px;
+}
+
+.line-3 {
+    transform: rotate(-18deg);
+    margin-top: -115px;
+}
+
+.line-4 {
+    left: 790px;
+    transform: rotate(340deg);
+}
+
+.line-5 {
+    left: 790px;
+    transform: rotate(353deg);
+}
+
+.line-6 {
+    left: 790px;
+    transform: rotate(-342deg);
+}
+
