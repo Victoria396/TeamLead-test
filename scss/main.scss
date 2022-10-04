@@ -1,0 +1,19 @@
+@import "_reset";
+
+    .button {
+        width: 320px;
+        height: 50px;
+        font-size: 20px;
+        text-transform: uppercase;
+        background-color: #e3ab00;
+        color: #ffffff;
+        font-weight: bold;
+        letter-spacing: 1.1px;
+        padding: 10px 20px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+    }            
+@import "_promo";
+@import "_formula";
+@import "_reviews";
