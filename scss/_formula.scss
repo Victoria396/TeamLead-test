@@ -39,39 +39,164 @@
     margin-top: 150px;
 }
 
+.formula__lines-position {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .line-1 {
     width: 125px;
     height: 2px;
-    margin-top: -45px;
     border-top: 2px solid #e3ab00;
     transform: rotate(20deg);
     position: absolute;
-    left: 270px;
+    margin-left: 20px;
+    margin-top: 210px;
 }
 
 .line-2 {
     transform: rotate(7deg);
     width: 100px;
-    margin-top: -70px;
+    margin-left: 20px;
+    margin-top: 30px;
 }
 
 .line-3 {
     transform: rotate(-18deg);
     margin-top: -115px;
+    margin-left: 20px;
 }
 
 .line-4 {
-    left: 790px;
     transform: rotate(340deg);
+    margin-left: -160px;
+    margin-top: 210px;
 }
 
 .line-5 {
-    left: 790px;
     transform: rotate(353deg);
+    margin-left: -160px;
+    margin-top: 30px;
 }
 
 .line-6 {
-    left: 790px;
     transform: rotate(-342deg);
+    margin-top: -130px;
+    margin-left: -160px;
 }
 
+
+@media(max-width: 1030px) { 
+    .formula div ul li {
+        margin: -32px 100px 61px 108px;
+    }
+    .line-1 {
+        width: 80px;
+        margin-left: 20px;
+    }
+
+    .line-2 {
+        margin-left: 20px;
+    }
+
+    .line-3 {
+        margin-left: 20px;
+    }
+
+    .line-4 {
+        margin-left: -95px;
+    }
+
+    .line-5 {
+        margin-left: -95px;
+    }
+
+    .line-6 {
+        margin-left: -95px;
+    }
+
+    .formula__btn {
+        margin-top: 82px;
+    }
+
+}
+
+@media(max-width: 825px) {
+    .formula {
+        padding-top: 550px;
+    }
+    .formula__product {
+        object-fit: contain;
+        width: 140px;
+    }
+    .formula div ul div img {
+        width: 100px;
+        height: 100px;
+        }
+    .formula div ul li p {
+        font-size: 13px;
+        white-space: nowrap;
+    }
+    .line-4, .line {
+        margin-top: 117px;
+    }
+}
+
+@media(max-width: 760px) {
+    .formula {
+        padding-top: 430px;
+    }
+    .line {
+        margin-top: 130px;
+    }
+    .line-1 {
+        width: 30px;
+        margin-left: 20px;
+    }
+    .line-2 {
+        margin-left: 20px;
+    }
+    .line-3 {
+        margin-left: 20px;
+        margin-top: -77px;
+    }
+    .line-4 {
+        margin-left: -50px;
+        margin-top: 130px;
+    }
+    .line-5 {
+        margin-left: -50px;
+    }
+    .line-6 {
+        margin-left: -50px;
+        margin-top: -77px;
+    }
+    .formula__btn {
+        margin-top: 82px;
+    }
+    .formula div ul li {
+    margin: -32px 50px 55px 50px;
+}
+}
+
+@media(max-width: 500px) {
+    .formula {
+        padding-top: 300px;
+    }
+    .formula__product {
+        width: 100px;
+        margin-top: 55px;
+    }
+    .formula div ul div img {
+        width: 70px;
+        height: 70px;
+    }
+    .formula div ul li {
+        margin: -32px 28px 55px 28px;
+    }
+    .formula div ul li p {
+        font-size: 11px;
+        margin-left: 0;
+    }
+}
