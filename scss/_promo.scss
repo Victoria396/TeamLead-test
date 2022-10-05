@@ -27,9 +27,12 @@
             }
         }
     }
-    .promo__btn {
+    &__btn {
         width: 270px;
         margin: 0 auto;
+    }
+    .btn {
+        transition: all 2s ease;
     }
 }
 .promo__bkg {
@@ -67,4 +70,99 @@
     right: auto;
     width: 100%;
     z-index: 2;
+}
+
+@media(max-width: 1185px) {
+    .promo__btn {
+        width: auto;
+        margin: 10px 50px;
+    }
+}
+
+@media(max-width: 990px) {
+    .promo .container img {
+        width: 130px;
+    }
+    .promo .container ul {
+        padding: 7px 85px 0px 0px;
+    }
+    .promo__bkg {
+        height: 428px;
+    }
+    .button {
+        width: 226px;
+        height: 40px;
+    }
+    .promo__btn {
+        margin: 3px 50px;
+    }
+}
+
+@media(max-width: 760px) {
+    .promo .container img {
+        display: none;
+    }
+    .promo .container ul {
+        padding: 7px 0;
+        margin: 0 auto;
+    }
+    .promo__btn {
+        margin: 3px auto;
+        max-width: 270px;
+        width: 100%;
+    }
+    .promo__bkg {
+        height: 280px;
+    }
+    .promo h1 {
+        font-size: 43px;
+        letter-spacing: 16px;
+        width: 275px;
+    }
+    .promo .container ul {
+        font-size: 20px;
+        padding: 0;
+    }
+    .button {
+        width: 148px;
+        height: 32px;
+        font-size: 17px;
+        padding: 0;
+    }
+    .promo__btn {
+        max-width: 185px;
+    }
+}
+
+@media(max-width: 1920px){
+    .promo__btn {
+        width: 400px;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width: 1326px){
+    .promo__btn {
+        width: 0;
+    }
+}
+
+@media(max-width: 500px){
+    .promo__bkg {
+        height: 200px;
+    }
+    .promo h1 {
+        font-size: 30px;
+        letter-spacing: 12px;
+        width: 180px;
+    }
+    .promo .container ul {
+        font-size: 16px;
+        line-height: 14px;
+        padding: 0;
+        margin-top: -18px;
+    }
+    .promo__btn {
+        display: none;
+    }
 }

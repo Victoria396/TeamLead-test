@@ -1,0 +1,177 @@
+.form {
+    padding: 75px 0 16px 0;
+    h2 {
+        font-size: 72px;
+        letter-spacing: 18px;
+        font-weight: bold;
+        margin: 20px auto;
+        width: 365px;
+        color: #e3ab00;
+    }
+    .form__subtitle {
+        margin: 20px auto;
+        max-width: 254px;
+        width: 100%;
+        font-size: 18px;
+    }
+    .countdown {
+            font-size: 20px;
+            font-weight: bold;
+            white-space: nowrap;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            width: 210px;
+            margin: 20px auto;
+            color: red;
+        }
+    &__content {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 750px;
+            width: 100%;
+            margin: 86px auto;
+        #myform.some {
+                background: #ffd87e;
+                padding: 50px 55px;
+                border-radius: 5px;
+                -webkit-box-shadow: 1px 4px 8px 5px rgba(34, 60, 80, 0.2);
+                -moz-box-shadow: 1px 4px 8px 5px rgba(34, 60, 80, 0.2);
+                box-shadow: 1px 4px 8px 5px rgba(34, 60, 80, 0.2);
+            h3 {
+                font-size: 19px;
+                line-height: 22px;
+                width: 300px;
+                margin: 0 0 30px 0;
+            }
+            div {
+            label {
+                font-size: 18px;
+                input {
+                    margin: 10px 0;
+                    width: 180px;
+                    height: 22px;
+                    border: 1.3px solid #e3ab00;
+                    border-radius: 2px;
+                    outline: none;
+                }
+            }
+        }
+        button {
+            margin-top: 15px;
+            width: 187px;
+            height: 37px;
+            font-size: 14px;
+            text-transform: uppercase;
+            background-color: #ffffff;
+            border: 1.3px solid #ffffff;
+            color: #e3ab00;
+            font-weight: bold;
+            letter-spacing: 1.1px;
+            padding: 10px 20px;
+            outline: none;
+            border-radius: 5px;
+            &:hover {
+                background-color: #e3ab00;
+                color: white;
+            };
+            &:focus {
+                background-color: #e3ab00;
+                color: white;
+            };
+            &:active{
+                background-color: #e3ab00;
+                color: white;
+            };
+            }
+        }
+        .form__wrp {
+            div {
+            img {
+                object-fit: contain;
+                width: 190px;
+            }
+            }
+            .form__price {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 40px;
+                h3 {
+                    position: absolute;
+                    font-size: 27px;
+                    margin-bottom: 6px;
+                    color: red;
+                    font-weight: bold;
+
+                    animation-name: anim-price;
+                    animation-duration: 2s;
+                    animation-timing-function: ease;
+                    animation-iteration-count: infinite;
+                }
+                p {
+                    position: relative;
+                    top: 38px;
+                    text-decoration: line-through red;
+                    color: gray;
+                }
+            }
+        }
+    }
+}
+
+.error-msg{
+    color: red;
+    margin: 10px 0;
+}
+
+.invalid{
+    border: 2px solid red;
+}
+
+.valid{
+    border: 2px solid green;
+}
+
+@keyframes anim-price {
+    0% {
+        font-size: 27px;
+    }
+    50% {
+        font-size: 33px;
+    }
+    100% {
+        font-size: 27px;
+    }
+}
+
+@media(max-width: 760px) {
+    .form__content {
+        flex-direction: column;
+    }
+    .form__wrp {
+        order: -1;
+        margin: -40px auto;
+    }
+    .form__content #myform.some {
+        margin-top: 120px;
+    }
+}
+
+@media(max-width: 420px) {
+    .form h2 {
+        font-size: 57px;
+        letter-spacing: 14px;
+        width: 295px;
+    }
+    .form__content #myform.some {
+        margin-top: 120px;
+        padding: 32px 6px;
+    }
+}

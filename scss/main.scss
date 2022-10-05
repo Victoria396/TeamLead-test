@@ -1,5 +1,9 @@
 @import "_reset";
 
+button, a {
+    cursor: pointer;
+}
+
     .button {
         width: 320px;
         height: 50px;
@@ -13,7 +17,12 @@
         border: none;
         outline: none;
         border-radius: 5px;
+        &:hover {background-color: #ffd87e;};
+        &:focus {background-color: #ffd87e;};
+        &:active{background-color: #ffd87e;};
     }            
 @import "_promo";
 @import "_formula";
 @import "_reviews";
+@import "_doctor";
+@import "_form";
